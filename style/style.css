@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing:auto;
+  font-weight:normal;
+  font-style:normal;
+  font-variation-settings:"wdth" 100;
+}
+
+
+/* univarsal common style  */
+
+.common-bg{
+  background-color: #FFF8F3;
+}
+.clr-primary{
+  color: #FD6E0A;
+}
+.dark-2{
+  margin: 15px 0 ;
+  color: #474747;
+}
+.common-btn{
+  background-color: #FD6E0A;
+  padding: 18px 36px ;
+  color: white;
+  border-radius: 7px;
+  font-weight: 500;
+  border:none;
+  font-size: 20px;
+}
+
+.section-title{
+  font-size: 35px;
+  font-weight: 600;
+  color:#181818;
+  margin-bottom: 20px;
+}
+
+.section-describtion{
+  font-size: 18px;
+  font-weight: normal;
+  color:#757575;
+}
+
+/* nav area style  */
+
+ .header{
+    background-image: url("../images/developer.png") , url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+  nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 30px 100px;
+  }
+  .nav-title{
+    font-size: 48px;
+    font-weight:800;
+    color: #000000;
+  }
+  
+  ul{
+    display: flex;
+    align-items: center;
+  }
+  li{
+    list-style: none;
+    margin-right: 50px;
+  }
+  a{
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  /* nav header-area-style  */
+
+
+  .banner{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px 0 100px;
+    align-items: center;
+  }
+  .banner-itro{
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .banner-title{
+    font-size: 75px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .banner-text{
+    margin: 24px 0;
+  }
+
+  .btn-2{
+    padding: 18px 36px ;
+    color: rgb(24, 12, 136);
+    border-radius: 7px;
+    font-weight: 600;
+    border:1px solid rgb(23, 212, 23);
+    font-size: 20px;
+    margin-left: 50px;
+    transition: 0.8s;
+  }
+  .btn-2:hover{
+    background-color: #FD6E0A;
+    color: white;
+    border: none;
+  }
+
+
+
+  /* main section style  */
+
+  main{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+  /* about section style  */
+
+  .about{
+    margin: 150px 0;
+    height: 450px;
+    display: flex;
+    padding: 40px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .about-describtion{
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  .about .about-items{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* what i do section style  */
+
+  .what-i-do{
+    text-align: center;
+  }
+
+  .languages{
+    text-align: left;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .language-item{
+    box-shadow: 1px 1px 2px rgba(216, 202, 202, 0.863);
+    padding: 8px 14px;
+  }
+
+
+  /* my resume section style  */
+
+
+  .my-resume{
+    
+    margin: 200px 0 ;
+    text-align: center;
+  }
+  .acknowledge{
+    padding: 50px 0;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  hr{
+  opacity: 0.3;
+  border:1px solid gray;
+  }
+  /* footer area style */
+
+  footer{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .socio-icon i {
+    margin-left: 24px;
+    color: #FD6E0A;
+  }
+  .footer-area{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 140px;
+  }
+  .contact input[type="text"], .contact input[type="email"] {
+    height: 50px;
+    width: 100%;
+    border: none;
+    padding: 10px ;
+    margin-bottom: 20px;
+  }
+  textarea{
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    padding: 20px;
+  }
+
+
+
+
+  /* responsive website layout design */
+
+
+  @media screen and (max-width:576px) {
+     
+    .header{
+      background-image: none;
+    }
+    nav{
+      flex-direction: column;
+    }
+    ul{
+      flex-direction: column;
+    }
+    ul > li {
+      margin-top: 15px;
+      margin-right: 0;
+    }
+    .common-btn{
+      padding: 8px 14px;
+    }
+    .btn-2{
+      padding: 8px 14px;
+      margin-top: 10px;
+      margin-left: 5px ;
+    }
+    .banner{
+      flex-direction: column;
+    }
+    .banner img{
+      width: 100%;
+    }
+  
+    .languages , .acknowledge , .about-items{
+      flex-direction: column;
+      margin: 0 20px;
+    }
+
+    .footer-area{
+      flex-direction: column;
+      margin: 0 20px;
+    }
+
+    .contact input[type="text"] , .contact input[type="email"] , textarea{
+      width: calc(100% - 40px);
+    
+    }
+
+  }
+
+  
